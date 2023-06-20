@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="405.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppendRecordController">
+   <children>
+      <AnchorPane layoutX="-56.0" layoutY="-149.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="106.0" layoutY="173.0" text="課程名稱：">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="202.0" text="課程時間：">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="234.0" text="授課教授：">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="label1" layoutX="157.0" layoutY="25.0" text="經濟學">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="158.0" layoutY="53.0" text="一D56">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="158.0" layoutY="84.0" text="吳文傑">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollerPane" layoutX="43.0" layoutY="129.0" prefHeight="225.0" prefWidth="285.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="272.0">
+               <children>
+                  <VBox fx:id="vBox" prefHeight="200.0" prefWidth="100.0" />
+                  <TableView layoutX="9.0" layoutY="-2.0" prefHeight="241.0" prefWidth="264.0">
+                    <columns>
+                        <TableColumn minWidth="6.4282684326171875" prefWidth="115.5" style="-fx-background-color: whitesmoke;" text="申請時間" />
+                        <TableColumn prefWidth="146.5" style="-fx-background-color: blanchedalmond;" text="目前狀態" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PopOutController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-5.0" prefHeight="169.0" prefWidth="278.0">
+         <children>
+            <Button fx:id="btn" layoutX="119.0" layoutY="125.0" mnemonicParsing="false" onAction="#btnAct" prefHeight="17.0" prefWidth="46.0" style="-fx-background-color: #ffc900;" text="Back" />
+            <Label fx:id="label" layoutX="79.0" layoutY="89.0" text="學分超出上限！" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="110.0" layoutY="20.0">
+               <image>
+                  <Image url="@../../../../../Desktop/img/warning.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

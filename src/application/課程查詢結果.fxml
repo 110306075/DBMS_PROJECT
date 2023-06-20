@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TestController">
+   <children>
+      <Pane prefHeight="73.0" prefWidth="507.0">
+         <children>
+            <Label fx:id="name" layoutX="21.0" layoutY="14.0" text="課程名稱">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeteach" layoutX="23.0" layoutY="43.0" prefHeight="17.0" prefWidth="299.0" text="課程ID： 學分： 教授：" />
+            <Button fx:id="searchbtn" layoutX="329.0" layoutY="27.0" mnemonicParsing="false" onAction="#searchevent" style="-fx-background-color: gainsboro;" text="申請紀錄查詢" />
+            <Button fx:id="appendbtn" layoutX="439.0" layoutY="27.0" mnemonicParsing="false" onAction="#appendAct" style="-fx-background-color: #ffc900;" text="加簽" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
